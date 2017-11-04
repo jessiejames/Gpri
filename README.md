@@ -22,8 +22,8 @@ This file is the "main" file right now.
 - Setup: write the gcode (or can be text) file to *input*
 - Run Expectation: the actuators initialize at (x,y,z):(25,25,0.5). Then the printer does a test for distance to stage. Then the file begins to print. GUI will show all three actuators' interfaces and a graph of the status.
 - Other Notes: The file runs as follows: 
- - 1) sends the actuators to *initializeHandles.m* to be initialized. 
----- 2) parses a gcode file into understandable movements via *readGCode* (gcode style= Makerbot, gcode file created via Inkscape, currently *mechLines1.gcode*). 
+ 1) sends the actuators to *initializeHandles.m* to be initialized. 
+ 2) parses a gcode file into understandable movements via *readGCode* (gcode style= Makerbot, gcode file created via Inkscape, currently *mechLines1.gcode*). 
 ---- 3) stores the parsed code into various arrays and text files for debugging or analyzing. 
 ---- 4) sends the movements to the actuators in *GPriMovement.m*
 ---- 5) closes handles of actuators for memory clean up and file saving.
