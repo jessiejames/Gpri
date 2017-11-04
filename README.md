@@ -3,7 +3,7 @@
 This is a repo for the Galinstan Printer created Summer 2017
 
 # Important Files and File Paths
-*note: Any section titled "Hoarder Stuff" is not active and just to save because it was interesting and could be used eventually
+*note: Any section titled "Hoarder Stuff" is not active and just to save because it was interesting and could be used eventually*
 
 ## SetAllHome.m
 This file *must* be used when the machine is turned on and the computer recognizes the connections to initialize the actuators. 
@@ -29,9 +29,9 @@ This file is the "main" file right now.
  5) closes handles of actuators for memory clean up and file saving.
 
 ### File Path for GCodeToXYZgraphStatus.m
-GCodeToXYZgraphStatus.m
-- initializeHandles.m
-- readGCode.m
-- GPriMovement.m
- - - IsMoving.m
-*** all other functions come from the matlab / microsoft COM object
+GCodeToXYZgraphStatus.m 
+- initializeHandles.m 
+- readGCode.m 
+- GPriMovement.m 
+ - - IsMoving.m 
+* all other functions come from the matlab / microsoft COM object
