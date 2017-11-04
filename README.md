@@ -7,8 +7,8 @@ This is a repo for the Galinstan Printer created Summer 2017
 
 ## SetAllHome.m
 This file *must* be used when the machine is turned on and the computer recognizes the connections to initialize the actuators. 
-- Setup: No setup, just run
-- Run Expectation: All actuators will move home (to zero / fully extended) very slowly. GUI will scroll through default actuator, then Z, Y, X. 
+- Setup: No setup, just run 
+- Run Expectation: All actuators will move home (to zero / fully extended) very slowly. GUI will scroll through default actuator, then Z, Y, X.  
 - Other Notes: order is Z, X, Y. The location values are usually wrong on GUI and will go negative. This is only during initialization. Sometimes you have to hit ok on a window too if a timeout occurs. 
 
 ## Zdriver.m
