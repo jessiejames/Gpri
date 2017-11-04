@@ -33,5 +33,5 @@ GCodeToXYZgraphStatus.m
 - initializeHandles.m
 - readGCode.m
 - GPriMovement.m
- - IsMoving.m
+ - - IsMoving.m
 *** all other functions come from the matlab / microsoft COM object
