@@ -2,13 +2,13 @@
 clear; close all; clc;
 
 % change newLocation to the position to move
-% change SN to the serial number of the chosen stage
-    % x = 90872005;
-    % y = 90872006;
-    % z = 90872007;
+% change axisOfChoice to the serial number of the chosen stage
+    x = 90872005;
+    y = 90872006;
+    z = 90872007;
 
 newLocation = 10; %change this to set the new location to move to
-SN = 90872007; % change this serial number to change the stage you want to control
+axisOfChoice = z; % change this serial number to change the stage you want to control
 
 %% GUI: Set up figure container / window         
 fpos    = get(0,'DefaultFigurePosition'); % figure default position
@@ -28,7 +28,7 @@ f = figure('Position', fpos,...
 
 stage = actxcontrol('MGMOTOR.MGMotorCtrl.1',[20 20 600 400 ], f);
 stage.StartCtrl;
-set(stage,'HWSerialNum', SN);
+set(stage,'HWSerialNum', axisOfChoice);
 stage.Identify;
 
 pause(5); % waiting for the GUI to load up;
