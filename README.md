@@ -24,14 +24,14 @@ This file is the "main" file right now.
 - Other Notes: The file runs as follows: 
  1) sends the actuators to *initializeHandles.m* to be initialized. 
  2) parses a gcode file into understandable movements via *readGCode* (gcode style= Makerbot, gcode file created via Inkscape, currently *mechLines1.gcode*). 
----- 3) stores the parsed code into various arrays and text files for debugging or analyzing. 
----- 4) sends the movements to the actuators in *GPriMovement.m*
----- 5) closes handles of actuators for memory clean up and file saving.
+ 3) stores the parsed code into various arrays and text files for debugging or analyzing. 
+ 4) sends the movements to the actuators in *GPriMovement.m*
+ 5) closes handles of actuators for memory clean up and file saving.
 
 ### File Path for GCodeToXYZgraphStatus.m
 GCodeToXYZgraphStatus.m
----initializeHandles.m
----readGCode.m
----GPriMovement.m
--------IsMoving.m
+- initializeHandles.m
+- readGCode.m
+- GPriMovement.m
+ - IsMoving.m
 *** all other functions come from the matlab / microsoft COM object
