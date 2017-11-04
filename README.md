@@ -29,9 +29,9 @@ This file is the "main" file right now.
  5) closes handles of actuators for memory clean up and file saving.
 
 ### File Path for GCodeToXYZgraphStatus.m
-GCodeToXYZgraphStatus.m 
+*GCodeToXYZgraphStatus.m* 
 - calls *initializeHandles.m* 
-- calls *readGCode.m *
-- GPriMovement.m 
- - - calls *IsMoving.m *
+- calls *readGCode.m*
+- calls *GPriMovement.m*
+ - - calls *IsMoving.m*
 * all other functions come from the matlab / microsoft COM object
