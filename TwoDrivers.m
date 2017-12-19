@@ -70,7 +70,7 @@ disp(stage0next);
 stage.SetAbsMovePos(0,newLocation1);
 stage.MoveAbsolute(0,1==0);
 disp('stage moving to ');
-disp(newLocation); 
+disp(newLocation1); 
 
 %Confirm Location / Position Again
 stageNext = stage.GetPosition_Position(0);
@@ -102,7 +102,7 @@ disp(stage0next);
 stage.SetAbsMovePos(0,newLocation2);
 stage.MoveAbsolute(0,1==0);
 disp('stage moving to ');
-disp(newLocation); 
+disp(newLocation2); 
 
 %Confirm Location / Position Again
 stageNext = stage.GetPosition_Position(0);
